@@ -183,4 +183,7 @@ client.on(Events.InteractionCreate, async interaction => {
   }
 });
 
+console.log("TOKEN EXISTS:", !!process.env.TOKEN);
+console.log("TOKEN LENGTH:", process.env.TOKEN?.length);
+
 client.login(process.env.TOKEN);
